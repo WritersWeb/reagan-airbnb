@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Gore Airbnb</title>
+    <meta name="description" content="Book your perfect accommodation at Gore Airbnb. Mountain-themed rooms for every budget." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Gore Airbnb</a>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="book.html" class="nav-link active">Book</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Book Your Stay</h1>
+                <p>Choose from our selection of mountain-themed accommodations</p>
+                
+                <!-- Important Notice -->
+                <div class="notice">
+                    <div class="notice-icon">⚠️</div>
+                    <div class="notice-content">
+                        <strong>Note:</strong> Only a few rooms are listed here. Many more are available at our premises. Please call or visit us for full booking options.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Rooms</button>
+                <button class="filter-btn" data-filter="budget">Budget</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="scenic">Scenic Views</button>
+            </div>
+
+            <!-- Budget Rooms -->
+            <div class="room-category" id="budget-section">
+                <h2 class="category-title">🟢 Budget Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-category="budget">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500" alt="Mt. Longonot Room" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Longonot Room</h3>
+                                <span class="room-price">Ksh 2,500</span>
+                            </div>
+                            <p class="room-description">Comfortable budget accommodation with basic amenities</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Budget</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Longonot Room" data-price="2,500">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="budget">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Mt. Satima Single" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Satima Single</h3>
+                                <span class="room-price">Ksh 2,000</span>
+                            </div>
+                            <p class="room-description">Cozy single room perfect for solo travelers</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Budget</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Satima Single" data-price="2,000">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="budget">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500" alt="Mt. Elgon Compact" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Elgon Compact</h3>
+                                <span class="room-price">Ksh 2,300</span>
+                            </div>
+                            <p class="room-description">Compact yet comfortable budget option</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Budget</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Elgon Compact" data-price="2,300">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="budget">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500" alt="Mt. Suswa Standard" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Suswa Standard</h3>
+                                <span class="room-price">Ksh 2,700</span>
+                            </div>
+                            <p class="room-description">Standard budget room with essential facilities</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Budget</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Suswa Standard" data-price="2,700">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Rooms -->
+            <div class="room-category" id="family-section">
+                <h2 class="category-title">🟡 Family Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-category="family">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Mt. Kilimanjaro Family Suite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Kilimanjaro Family Suite</h3>
+                                <span class="room-price">Ksh 5,500</span>
+                            </div>
+                            <p class="room-description">Spacious family suite accommodating up to 6 guests</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Family</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Kilimanjaro Family Suite" data-price="5,500">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="family">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Mt. Kenya Double Queen" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Kenya Double Queen</h3>
+                                <span class="room-price">Ksh 5,000</span>
+                            </div>
+                            <p class="room-description">Family room with two queen beds</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Family</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Kenya Double Queen" data-price="5,000">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="family">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Mt. Meru Family Deluxe" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Meru Family Deluxe</h3>
+                                <span class="room-price">Ksh 5,800</span>
+                            </div>
+                            <p class="room-description">Deluxe family accommodation with premium amenities</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Family</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Meru Family Deluxe" data-price="5,800">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="family">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Mt. Rwenzori Family Retreat" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Rwenzori Family Retreat</h3>
+                                <span class="room-price">Ksh 6,000</span>
+                            </div>
+                            <p class="room-description">Family retreat with separate living area</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Family</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Rwenzori Family Retreat" data-price="6,000">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Luxury Rooms -->
+            <div class="room-category" id="luxury-section">
+                <h2 class="category-title">🔴 Luxury Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-category="luxury">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500" alt="Mt. Everest Executive Suite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Everest Executive Suite</h3>
+                                <span class="room-price">Ksh 9,000</span>
+                            </div>
+                            <p class="room-description">Ultimate luxury suite with premium facilities</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Luxury</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Everest Executive Suite" data-price="9,000">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="luxury">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500" alt="Mt. Blanc Prestige Room" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Blanc Prestige Room</h3>
+                                <span class="room-price">Ksh 8,500</span>
+                            </div>
+                            <p class="room-description">Prestigious luxury accommodation</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Luxury</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Blanc Prestige Room" data-price="8,500">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="luxury">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500" alt="Mt. Elbrus Royal Lounge" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Elbrus Royal Lounge</h3>
+                                <span class="room-price">Ksh 8,800</span>
+                            </div>
+                            <p class="room-description">Royal treatment with exclusive amenities</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Luxury</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Elbrus Royal Lounge" data-price="8,800">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="luxury">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500" alt="Mt. Fuji Elite Suite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Fuji Elite Suite</h3>
+                                <span class="room-price">Ksh 9,200</span>
+                            </div>
+                            <p class="room-description">Elite luxury suite with panoramic views</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Luxury</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Fuji Elite Suite" data-price="9,200">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Rooms -->
+            <div class="room-category" id="business-section">
+                <h2 class="category-title">🔵 Business Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-category="business">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500" alt="Mt. Sinai Executive Desk Room" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Sinai Executive Desk Room</h3>
+                                <span class="room-price">Ksh 6,500</span>
+                            </div>
+                            <p class="room-description">Business room with dedicated workspace</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Business</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Sinai Executive Desk Room" data-price="6,500">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="business">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500" alt="Mt. Damavand Pro Suite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Damavand Pro Suite</h3>
+                                <span class="room-price">Ksh 6,800</span>
+                            </div>
+                            <p class="room-description">Professional suite for business travelers</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Business</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Damavand Pro Suite" data-price="6,800">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="business">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500" alt="Mt. Atlas Business Elite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Atlas Business Elite</h3>
+                                <span class="room-price">Ksh 7,000</span>
+                            </div>
+                            <p class="room-description">Elite business accommodation with meeting space</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Business</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Atlas Business Elite" data-price="7,000">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="business">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500" alt="Mt. Aconcagua Work & Rest Room" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Aconcagua Work & Rest Room</h3>
+                                <span class="room-price">Ksh 6,900</span>
+                            </div>
+                            <p class="room-description">Perfect balance of work and relaxation</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Business</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Aconcagua Work & Rest Room" data-price="6,900">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scenic View Rooms -->
+            <div class="room-category" id="scenic-section">
+                <h2 class="category-title">🟣 Scenic View Rooms</h2>
+                <div class="rooms-grid">
+                    <div class="room-card" data-category="scenic">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Mt. Denali Scenic Vista" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Denali Scenic Vista</h3>
+                                <span class="room-price">Ksh 4,500</span>
+                            </div>
+                            <p class="room-description">Breathtaking mountain views from every window</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Scenic</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Denali Scenic Vista" data-price="4,500">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="scenic">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Mt. McKinley View Suite" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. McKinley View Suite</h3>
+                                <span class="room-price">Ksh 4,800</span>
+                            </div>
+                            <p class="room-description">Panoramic views with luxury comfort</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Scenic</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. McKinley View Suite" data-price="4,800">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="scenic">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Mt. Rainier Overlook" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Rainier Overlook</h3>
+                                <span class="room-price">Ksh 4,200</span>
+                            </div>
+                            <p class="room-description">Stunning overlook with nature views</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Scenic</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Rainier Overlook" data-price="4,200">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="room-card" data-category="scenic">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Mt. Whitney Skyline Room" class="room-image">
+                        <div class="room-content">
+                            <div class="room-header">
+                                <h3>Mt. Whitney Skyline Room</h3>
+                                <span class="room-price">Ksh 4,600</span>
+                            </div>
+                            <p class="room-description">City and mountain skyline views</p>
+                            <div class="room-footer">
+                                <span class="room-category-tag">Scenic</span>
+                                <button class="btn btn-primary book-btn" data-room="Mt. Whitney Skyline Room" data-price="4,600">Call to Book</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-section">
+                <h3>Ready to Book?</h3>
+                <p>Contact us directly for reservations and more room options</p>
+                <div class="contact-buttons">
+                    <a href="tel:+254746106501" class="btn btn-primary">📞 Call: 0746106501</a>
+                    <a href="https://wa.me/254746106501" target="_blank" class="btn btn-secondary">💬 WhatsApp</a>
+                    <a href="mailto:reaganmochama@gmail.com" class="btn btn-secondary">✉️ Email</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gore Airbnb</h3>
+                    <p>Your premium accommodation destination</p>
+                    <div class="contact-info">
+                        <p>📞 0746106501</p>
+                        <p>✉️ reaganmochama@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+                        <a href="https://wa.me/254746106501" target="_blank">WhatsApp</a>
+                        <a href="https://www.tiktok.com/@yourusername" target="_blank">TikTok</a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gore Airbnb. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
